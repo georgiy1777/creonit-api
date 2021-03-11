@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/style.css">
+
+  <title>Creonit API</title>
+  
+</head>
+<body>
+
+  <div id="root">
+
+    <div class="header">
+      <h1>Creonit API</h1>
+      <button class="button button-cart">
+        Корзина
+        <img src="./dist/images/arrow-down.png" alt="">
+      </button>
+    </div>
+
+    <div class="cart">
+      <h2 class="cart-title">Корзина</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>№</th>
+            <th class="left">Товар</th>
+            <th>Количество</th>
+            <th>Цена</th>
+          </tr>
+        </thead>
+        <tbody class="center">
+
+        </tbody>
+      </table>
+      <p class="cart-total">Итоговая сумма: <span>1000</span></p>
+    </div>
+
+    <div class="main-content">
+
+      <div class="categories">
+        <h2 class="categories-title">Категории</h2>
+        <ul class="categories-buttons">
+          <li class="button button-category" data-category="shiny">Шины</li>
+          <li class="button button-category" data-category="diski">Диски</li>
+        </ul>
+      </div>
+
+      <div class="items-list">
+        <div class="item">Выберите категорию</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="notifications">
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./dist/app.js"></script>
+</body>
+</html>
